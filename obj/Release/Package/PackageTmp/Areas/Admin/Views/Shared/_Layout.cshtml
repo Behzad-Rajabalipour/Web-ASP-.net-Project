@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <a href="/Admin" class="btn btn-info">Admin1</a>                 <!---->
+        <a href="/Admin/NewsGroups/Index" class="btn btn-info">Admin2</a>
+        <a href="/Admin/News/Index" class="btn btn-info">News</a>
+        <a href="/Admin/Users/Index" class="btn btn-info">Users</a>
+        <a href="/Admin/Comments/Index" class="btn btn-info">Comments</a>
+        <a href="/Account/Logout" class="btn btn-info">Comments</a>
+    </div>
+
+    <div style="width: 100px;">
+        <ul>
+            <li>
+                <a class="nav-link btn btn-success" href="/">Home</a>
+            </li>
+            <li>
+                <a class="nav-link btn btn-success" href="/Account/Logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn btn-secondary" readonly>User Pannel @User.Identity.Name</div>           <!-- User.Identity.Name -->
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>       <!-- baraye ckeditor hast -->
+    <!-- baraye ckeditor hast -->
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Description'), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(err => {
+                console.error(err.stack);
+            });
+    </script>
+</body>
+</html>

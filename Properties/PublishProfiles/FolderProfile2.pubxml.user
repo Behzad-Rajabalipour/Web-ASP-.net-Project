@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Views/Comments/Delete.cshtml">
+      <publishTime>03/18/2024 23:39:17</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Comments/Details.cshtml">
+      <publishTime>03/18/2024 23:39:17</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Comments/Edit.cshtml">
+      <publishTime>03/19/2024 00:46:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Comments/Index.cshtml">
+      <publishTime>03/19/2024 01:08:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/News/Create.cshtml">
+      <publishTime>03/16/2024 20:35:31</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/News/Delete.cshtml">
+      <publishTime>03/17/2024 00:44:57</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/News/Details.cshtml">
+      <publishTime>03/17/2024 00:43:07</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/News/Edit.cshtml">
+      <publishTime>03/17/2024 00:20:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/News/Index.cshtml">
+      <publishTime>03/16/2024 21:34:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/NewsGroups/Create.cshtml">
+      <publishTime>03/16/2024 21:26:53</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/NewsGroups/Delete.cshtml">
+      <publishTime>03/16/2024 21:27:01</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/NewsGroups/Details.cshtml">
+      <publishTime>03/16/2024 21:27:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/NewsGroups/Edit.cshtml">
+      <publishTime>03/16/2024 21:27:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/NewsGroups/Index.cshtml">
+      <publishTime>03/16/2024 21:27:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_Layout.cshtml">
+      <publishTime>03/22/2024 19:41:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Create.cshtml">
+      <publishTime>03/19/2024 01:37:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Delete.cshtml">
+      <publishTime>03/19/2024 01:46:12</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Details.cshtml">
+      <publishTime>03/19/2024 01:54:20</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Edit.cshtml">
+      <publishTime>03/19/2024 01:37:42</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Index.cshtml">
+      <publishTime>03/19/2024 01:32:25</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>03/14/2024 00:25:09</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/_ViewStart.cshtml">
+      <publishTime>03/14/2024 00:33:18</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 17:29:20</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>07/01/2020 12:00:54</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/16/2020 16:38:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/16/2020 16:38:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 17:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/28/2022 00:39:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 07:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 13:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 13:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 13:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 19:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 19:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 04:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 19:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 19:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 19:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 19:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 19:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 19:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 19:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 19:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 19:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 04:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 19:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 19:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 19:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 19:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 19:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 19:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 19:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 19:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 19:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 19:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 19:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 19:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 13:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 13:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 13:18:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/28/2022 00:41:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/28/2022 00:42:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/28/2022 00:42:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/28/2022 00:42:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/28/2022 00:42:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/28/2022 00:42:50</publishTime>
+    </File>
+    <File Include="bin/WebApplication11.dll">
+      <publishTime>03/23/2024 04:48:31</publishTime>
+    </File>
+    <File Include="bin/WebApplication11.dll.config">
+      <publishTime>03/12/2024 19:52:59</publishTime>
+    </File>
+    <File Include="bin/WebApplication11.pdb">
+      <publishTime>03/23/2024 04:48:31</publishTime>
+    </File>
+    <File Include="bin/WebApplication12.dll">
+      <publishTime>03/23/2024 04:48:31</publishTime>
+    </File>
+    <File Include="bin/WebApplication12.pdb">
+      <publishTime>03/23/2024 04:48:31</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Create.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Delete.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Details.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Edit.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Empty.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/Imports.include.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/List.cs.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="CodeTemplates/MvcView/ModelMetadataFunctions.cs.include.t4">
+      <publishTime>03/16/2024 01:46:49</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.min.css">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.css">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.css.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.min.css">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.min.css.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>03/16/2024 02:57:05</publishTime>
+    </File>
+    <File Include="Description.txt">
+      <publishTime>03/23/2024 04:46:53</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/14/2024 00:20:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/14/2024 00:20:07</publishTime>
+    </File>
+    <File Include="Images/News-Groups/085b8c1e4ed4413fa0d198921cd44a2d.jpeg">
+      <publishTime>03/16/2024 21:52:42</publishTime>
+    </File>
+    <File Include="Images/News-Groups/0b24b66151d24b04b179c8d3e0af3a45.jpeg">
+      <publishTime>03/16/2024 21:52:53</publishTime>
+    </File>
+    <File Include="Images/News-Groups/1d307e7ecefe4353805de96ceb478624.jpeg">
+      <publishTime>03/16/2024 21:52:19</publishTime>
+    </File>
+    <File Include="Images/News-Groups/294a8aa4eeab4c8abfd30d053f6c18ce.jpeg">
+      <publishTime>03/16/2024 16:11:04</publishTime>
+    </File>
+    <File Include="Images/News-Groups/40e1eeb46200473e84161464f7eed1be.jpeg">
+      <publishTime>03/17/2024 00:05:00</publishTime>
+    </File>
+    <File Include="Images/News-Groups/54e54cdeb6574fe384e1d2b6e57d2e7d.jpeg">
+      <publishTime>03/16/2024 20:18:55</publishTime>
+    </File>
+    <File Include="Images/News-Groups/747ea6c5a890423ca493731e1f47fc78.jpeg">
+      <publishTime>03/16/2024 16:33:56</publishTime>
+    </File>
+    <File Include="Images/News-Groups/81e5749ae84247d7a6e93c860a85e6a2.jpeg">
+      <publishTime>03/16/2024 16:33:40</publishTime>
+    </File>
+    <File Include="Images/News-Groups/be0c5481afa14e98ae67773d7f5380e2.jpeg">
+      <publishTime>03/16/2024 16:33:09</publishTime>
+    </File>
+    <File Include="Images/News-Groups/da95ee13273948d589c1222f90fcc697.jpeg">
+      <publishTime>03/16/2024 16:33:24</publishTime>
+    </File>
+    <File Include="Images/News-Groups/e0295965d19a468b8a4a1e4d2bfa9244.jpeg">
+      <publishTime>03/16/2024 21:52:28</publishTime>
+    </File>
+    <File Include="Images/News-Groups/f958aeca8cf7491b91aefe89daecd6f0.jpeg">
+      <publishTime>03/16/2024 21:34:58</publishTime>
+    </File>
+    <File Include="Images/News-Groups/nophoto.jpg">
+      <publishTime>03/14/2024 00:48:09</publishTime>
+    </File>
+    <File Include="Images/News/0831db6c02e24e13a5c03fdca3727670.jpeg">
+      <publishTime>03/16/2024 21:58:05</publishTime>
+    </File>
+    <File Include="Images/News/13e24bf527144b54bfd28a61a34350f1.jpeg">
+      <publishTime>03/17/2024 00:10:55</publishTime>
+    </File>
+    <File Include="Images/News/32ec312cad7d417880a7259b55fa28ac.jpeg">
+      <publishTime>03/16/2024 21:41:15</publishTime>
+    </File>
+    <File Include="Images/News/40d39ca816b047a0a54ceb3c5519aee3.jpeg">
+      <publishTime>03/16/2024 21:38:49</publishTime>
+    </File>
+    <File Include="Images/News/40e1eeb46200473e84161464f7eed1be.jpeg">
+      <publishTime>03/17/2024 00:08:20</publishTime>
+    </File>
+    <File Include="Images/News/4ea165cf719b47c2915e531dca2ee386.jpeg">
+      <publishTime>03/16/2024 21:43:49</publishTime>
+    </File>
+    <File Include="Images/News/6bf8f967d3824080aabc5fda72fa6c5d.jpeg">
+      <publishTime>03/16/2024 20:40:09</publishTime>
+    </File>
+    <File Include="Images/News/7e59839d02554cc89b7bc368d1e9bc2e.jpeg">
+      <publishTime>03/17/2024 00:25:46</publishTime>
+    </File>
+    <File Include="Images/News/9b7385c20fb4449195dc8d3480601210.jpeg">
+      <publishTime>03/16/2024 20:36:22</publishTime>
+    </File>
+    <File Include="Images/News/baa6818d6f7640e1be5e04154e38657c.jpeg">
+      <publishTime>03/16/2024 21:12:30</publishTime>
+    </File>
+    <File Include="Images/News/c7ecbaccecf947d2a5b872069da8cef7.jpeg">
+      <publishTime>03/16/2024 20:37:44</publishTime>
+    </File>
+    <File Include="Images/News/e9b5624af7564d5883b31254d24ee94a.jpeg">
+      <publishTime>03/16/2024 21:55:05</publishTime>
+    </File>
+    <File Include="Images/News/nophoto.jpg">
+      <publishTime>03/16/2024 17:29:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.min.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.min.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>03/14/2024 00:20:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>03/14/2024 00:20:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>03/22/2024 21:09:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/14/2024 00:20:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/14/2024 00:20:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/14/2024 00:20:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/14/2024 00:20:13</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>03/14/2024 00:20:13</publishTime>
+    </File>
+    <File Include="Scripts/myScript.js">
+      <publishTime>03/21/2024 02:45:05</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>03/16/2024 20:45:59</publishTime>
+    </File>
+    <File Include="Views/Account/LoginState.cshtml">
+      <publishTime>03/20/2024 02:17:45</publishTime>
+    </File>
+    <File Include="Views/Comment/CreateComment.cshtml">
+      <publishTime>03/22/2024 22:48:46</publishTime>
+    </File>
+    <File Include="Views/Comment/ShowComment.cshtml">
+      <publishTime>03/22/2024 22:07:52</publishTime>
+    </File>
+    <File Include="Views/Home/AboutUs.cshtml">
+      <publishTime>03/21/2024 02:58:37</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/20/2024 11:56:27</publishTime>
+    </File>
+    <File Include="Views/News/BestNews.cshtml">
+      <publishTime>03/21/2024 02:10:20</publishTime>
+    </File>
+    <File Include="Views/News/LastNews.cshtml">
+      <publishTime>03/21/2024 02:14:39</publishTime>
+    </File>
+    <File Include="Views/News/NewsDetail.cshtml">
+      <publishTime>03/22/2024 22:42:28</publishTime>
+    </File>
+    <File Include="Views/News/ShowLike.cshtml">
+      <publishTime>03/21/2024 02:20:26</publishTime>
+    </File>
+    <File Include="Views/News/ShowNewsGroup.cshtml">
+      <publishTime>03/21/2024 01:39:54</publishTime>
+    </File>
+    <File Include="Views/News/ShowNewsList.cshtml">
+      <publishTime>03/22/2024 21:42:20</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>03/14/2024 00:20:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_CommentBox.cshtml">
+      <publishTime>03/22/2024 19:54:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_Footer.cshtml">
+      <publishTime>03/20/2024 01:52:49</publishTime>
+    </File>
+    <File Include="Views/Shared/_Header.cshtml">
+      <publishTime>03/20/2024 02:14:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/20/2024 11:37:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_NewsBox.cshtml">
+      <publishTime>03/21/2024 02:30:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_NewsBox2.cshtml">
+      <publishTime>03/21/2024 02:53:02</publishTime>
+    </File>
+    <File Include="Views/Shared/_Slider.cshtml">
+      <publishTime>03/20/2024 01:57:41</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/14/2024 00:20:07</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/14/2024 00:20:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/23/2024 04:48:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

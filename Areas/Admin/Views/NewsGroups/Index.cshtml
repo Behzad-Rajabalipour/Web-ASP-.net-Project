@@ -1,0 +1,47 @@
+﻿<!-- bejaye list, IEnumerable migire -->
+@model IEnumerable<WebApplication12.Models.ViewModels.NewsGroupViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })          <!-- add class, null = route value hast -->
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsGroupTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewsGroupTitle)
+            </td>
+            <td>
+                <img src="~/Images/News-Groups/@item.ImageName" class="img120x120" />            <!---->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.NewsGroupId }, new { @class = "btn btn-success" }) |       <!-- add class -->
+                @Html.ActionLink("Details", "Details", new { id = item.NewsGroupId }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.NewsGroupId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

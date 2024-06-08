@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebApplication12.Models.ViewModels.NewsViewModel>
+
+@{
+    ViewBag.Title = "behzad Index";
+}
+
+<h2>Behzad List</h2>
+
+<p>
+    @Html.ActionLink("behzad modifd Create New", "Create", null, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegisterDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.See)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Like)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsGroupId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        // farz kon yek ghalebe News dari, injuri hameja azash estefade mikoni
+        @Html.Partial("_NewsBox2", item);       // har item ro befrest unvar
+    }
+
+</table>

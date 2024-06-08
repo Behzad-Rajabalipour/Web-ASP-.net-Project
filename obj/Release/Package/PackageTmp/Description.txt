@@ -1,0 +1,38 @@
+﻿1. Solution Explorer => References => Add Reference => Add WebApplication11
+2. NutGet => AutoMapper, EntityFramework
+3. hatman namespaces ro to App_Start => RouteConfig.cs bayad vared konim age Area dashtim
+4. toye App_Start => BundleConfig.cs => input ha case sensetive hastan. mesle Site.css, na site.css
+5. To web.config => <system.web>
+					  <authentication mode="Forms">
+						  <forms name="MySite" defaultUrl="/" loginUrl="/Account/Login" timeout="43000" />
+
+6. To web.config =>  </connectionStrings>
+						<location path="Admin">     
+							<system.web>
+								<authorization>
+									<deny users="?"/>
+
+7. ckeditor:
+	A. Areas => Shared => _Layout.cshtml => Add mikonim <script> haro
+	B. Models => ViewModels => NewsViewModel => [DataType(DataType.MultilineText)] va [AllowHtml] ro baraye Description ezafe mikonim
+
+8. Routing ro toye Controllers => HomeController.cs => Action AboutUS() bebin
+9. Negah kon ExtenClass ro. folder Classes => ExtensionClass.cs
+
+10. NewsController ro negah kon, chandta nokte jadid va mohem dare. fodere Controller => NewsController.cs
+
+//------------------------------------------------------------------------
+11. kharide Host az site: 
+	تو اینترینت سرچ کن خرید هاست ویندوزی
+	www.iranserver.com
+	toye Host: DB, Storage va Ec2 Insatnce va ... dare
+
+12. kharide DomainName az site: 
+	esme Domain ro search mikoni, masalan: Behzad-Website.ca
+	www.iranserver.com
+
+13. Set kardane DNS:
+	A. bade kharide Host, behet DNS ro mide. masalan: n1.iranserver.com, n1.iranserver.com
+	B. bade kharide Domain: DNS Host ro midim be DNS Domain
+	C. badesh vaghti esme Domain ro to URL type mikoni age HOST rosh bashe neshun mide
+	D. Site ro Upload mikonim roye HOST: right click roye WebApplication12 => Publish => Web Serve(IIS)

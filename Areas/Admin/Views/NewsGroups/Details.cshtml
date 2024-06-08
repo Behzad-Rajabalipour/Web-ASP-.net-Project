@@ -1,0 +1,42 @@
+﻿@model WebApplication12.Models.ViewModels.NewsGroupViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NewsGroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NewsGroupTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewsGroupTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </dt>
+
+        <dd>
+            <img src="~/Images/News-Groups/@Model.ImageName" class="img120x120"/>   <!----->
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NewsGroupId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

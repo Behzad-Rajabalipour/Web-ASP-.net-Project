@@ -1,0 +1,14 @@
+﻿@model WebApplication12.Models.ViewModels.NewsViewModel
+
+<div>
+    NewsTitle: @Model.NewsTitle
+    See: @Model.See
+    RegisterDate: @Model.RegisterDate.ToString("dd MMMM yyyy")   <!-- injuri formate RegisterDate ro negah midare {dd MMMM YYYY}-->
+    Like: @Model.Like
+    <img src="~/Images/News/@Model.ImageName" alt="@Model.NewsTitle" style="width:50px; height:50px;" />
+    <a href="/News/NewsDetail/@Model.NewsId">News Number @Model.NewsId</a>            <!-- vasl mishe be NewsDetail page -->
+    <div id="showLike_@Model.NewsId@ViewData["code"]">   <!-- ViewData["code"] az bala dasti miyad -->
+        <!-- id ro to Ajax baraye update Like estefade kardim. Id har <div> fargh mikone -->
+        @Html.Action("ShowLike", "News", new { newsId = Model.NewsId, state = true, code = ViewData["code"] })   <!-- baraye dafeye aval ine -->
+    </div>
+</div>

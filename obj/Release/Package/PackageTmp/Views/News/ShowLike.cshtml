@@ -1,0 +1,16 @@
+﻿@model WebApplication12.Models.ViewModels.NewsLikeViewModel
+
+@if (Model.NewsState)
+{
+    <a onclick="changeLikeState(@Model.NewsId, false, @ViewBag.code)" style="cursor:pointer;"> <!-- false inja hamun NewsState hast ke bar aksesh mikonim -->
+        <i class="fas fa-thumbs-up"></i>
+    </a>
+    @Model.Like
+}
+else
+{
+<a onclick="changeLikeState(@Model.NewsId, true, @ViewBag.code)" style="cursor:pointer; color:green;"> <!-- true inja hamun NewsState hast ke bar aksesh mikonim -->
+    <i class="fas fa-thumbs-up" style="color:green;"></i>
+</a>
+    @Model.Like
+}

@@ -1,0 +1,67 @@
+﻿@model WebApplication12.Models.ViewModels.NewsViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm("Create", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>News</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewsTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NewsTitle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NewsTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <img src="~/Images/News/nophoto.jpg" class="img60x60" id="imgPrev" />      <!-- id ro o js lazem darim -->
+                <!-- name= ,ShowPreview(this), #ref1 -->
+                <input type="file" id="imgupload" name="imgUpload" onchange="ShowPreview(this)" accept="image/*" /> <!-- (this) => lowercase -->
+            </div>
+        </div>
+
+        <!-- DropDown -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewsGroupId, "NewsGroup Id", htmlAttributes: new { @class = "control-label col-md-2" })    <!-- label ro dorost mikonim -->
+            <div class="col-md-10">
+                @Html.DropDownList("NewsGroupId", String.Empty)        <!-- (parameter aval, Empty yani avalesh empy bashe)  -->
+                @Html.ValidationMessageFor(model => model.NewsGroupId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/myScript.js"></script>           <!-- ezafe mikonim, script khodam hast -->
+}

@@ -1,0 +1,41 @@
+﻿
+@model WebApplication12.Models.ViewModels.NewsViewModel
+
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => Model.NewsId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.NewsTitle)
+    </td>
+    <td>
+        <div style="overflow-y: hidden;">
+            <!---->
+            @Html.Raw(Model.Description)                         <!-- chon ckeditor hast injuri bashe -->
+        </div>
+    </td>
+    <td>
+        <img src="~/Images/News/@Model.ImageName" class="img60x60" />     <!-- img hast -->
+    </td>
+    <td>
+        @Model.RegisterDate.ToString("dd MMMM yyyy")             <!-- formate Date injuri bashe -->
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.IsActive)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.See)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Like)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.NewsGroupId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.UserId)
+    </td>
+    <td>
+        @Html.ActionLink("behzad Details", "NewsDetail", "News", new { id = Model.NewsId }, new { @class = "btn btn-info" })  <!-- chon id hast pas injuri mitunim input bedim => id = item.NewsId -->
+    </td>
+</tr>

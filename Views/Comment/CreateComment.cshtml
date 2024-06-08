@@ -1,0 +1,62 @@
+﻿@model WebApplication12.Models.ViewModels.CommentViewModel
+
+<!-- Ajax Post. javab bar migarde haminja -->
+<!-- App_Start => BundleConfig.cs => "jquery.validate.unobtrusive.min.js" va "jquery.unobtrusive-ajax.min.js" ro add mikonim-->
+@using (Ajax.BeginForm("CreateComment", "Comment", FormMethod.Post, new AjaxOptions
+{
+    // onSuccess
+    UpdateTargetId = "showComments",     // Id showComments to NewsDetail.cshtml. javab bar migarde inja, PartialView ro to in Id neshun mide
+    OnSuccess = "runSuccesMessage",      // to NewsDetail.cshtml, to scriptesh, functione runMessage ro ejra mikone
+    // onFailure
+    OnFailure = "runFailureMessage",     // age fail shod in Ajax function ro run kon. UpdateTargetId ejra nemishe baraye failure
+}))
+
+{
+    <h2>Create Comment for this News</h2>
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.NewsId)       <!-- NewsID ro bar migardunim Back -->
+        @Html.HiddenFor(model => model.IsActive)     <!-- chon to CommentViewModel in required hast, pas bayad hatman befrestimesh back -->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @Id = "Name", required = "required" }  })  <!-- Id behesh dadam, ke to Ajax bade submit khalish konam, required -->
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", @Id = "Desc" } }) 
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.commentText, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.commentText, new { htmlAttributes = new { @class = "form-control", @Id = "Comment" } })   <!-- mituni ino null bezari ke erroresh ro bebini-->
+                @Html.ValidationMessageFor(model => model.commentText, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @Id = "Email" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit Comment" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

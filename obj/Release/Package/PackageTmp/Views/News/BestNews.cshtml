@@ -1,0 +1,9 @@
+﻿@model IEnumerable<WebApplication12.Models.ViewModels.NewsViewModel>
+
+<p>---------------------------------------------------------</p>
+<h2>Best News </h2>
+@foreach (var item in Model)
+{
+    @Html.Partial("_NewsBox", item, new ViewDataDictionary { { "code", 2 } })   <!-- Partial View(Razor), mitune item va input ham bebare -->
+}
+<p>---------------------------------------------------------</p>

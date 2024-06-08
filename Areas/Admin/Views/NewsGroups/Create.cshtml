@@ -1,0 +1,61 @@
+﻿<!-- NewsGroupViewModel nabayd be db vasl bashe, chon PK nadare -->
+@model WebApplication12.Models.ViewModels.NewsGroupViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+<!-- enctype, chon file darim  -->
+@using (Html.BeginForm("Create", "NewsGroups", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>NewsGroupViewModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })           <!---->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewsGroupTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NewsGroupTitle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NewsGroupTitle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <img src="~/Images/News-Groups/nophoto.jpg" class="img60x60" id="imgPrev" />      <!-- id ro o js lazem darim -->
+                <!-- name= ,ShowPreview(this), #ref1 -->
+                <input type="file" id="imgupload" name="imgUpload" onchange="ShowPreview(this)" value="nophoto.jpg" accept="image/*" /> <!-- (this) => lowercase -->
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/myScript.js"></script>           <!-- ezafe mikonim, script khodam hast -->
+}

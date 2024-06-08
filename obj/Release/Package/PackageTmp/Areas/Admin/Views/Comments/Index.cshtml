@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication12.Models.ViewModels.CommentViewModel>
+
+@{
+    ViewBag.Title = "behzad Index";
+    int id = 1;                             // id
+}
+
+<h2>Behzad List</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Row
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.News.NewsTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commentText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commentText)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @id                 <!-- id -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.News.NewsTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.commentText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <!-- condition -->
+                @if (item.IsActive == true)
+                {
+                    <span>
+                        Active
+                    </span>
+                }
+                else
+                {
+                    <span>
+                        Deactive
+                    </span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.commentText)
+            </td>
+            <td>
+                @Html.ActionLink("behzad Edit", "Edit", new { id = item.commentId }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("behzad Details", "Details", new { id = item.commentId }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("behzad Delete", "Delete", new { id = item.commentId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+        id += 1;            // id +=1;
+    }
+</table>

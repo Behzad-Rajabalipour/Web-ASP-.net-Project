@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+
+    @Html.Action("ShowNewsGroup", "News", new { LocId = 1 })            <!-- Controller = News, Action = ShowNewsGroup. Action hast ke yek PartialView ro call mikone -->
+    <!-- ba input 4, Action ro seda mizane. in Action, Partial View dare -->
+    @Html.Action("LastNews", "News", new { count = 2 })       <!-- input 4 -->
+    @Html.Action("LastNews", "News")                          <!-- input nadare -->
+    @Html.Action("BestNews", "News", new { count = 3 })
+
+    <h1>Main Page</h1>
+
+</main>
+
+@section Scripts {
+    <script src="~/Scripts/myScript.js"></script>           <!-- ezafe mikonim, script khodam hast -->
+}

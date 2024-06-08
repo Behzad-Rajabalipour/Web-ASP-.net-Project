@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebApplication12.Models.ViewModels.NewsGroupViewModel>
+
+<!-- ba input 1 -->
+@if (ViewBag.LocId == 1)
+{
+    <div>
+        <h2 style="color:green;">ShowNewsGroup Partial view LocId = 1</h2>
+    </div>
+
+    <div>
+        @foreach (var item in Model)
+        {
+            <div>
+                <div>
+                    <a href="/News/ShowNewsList/@item.NewsGroupId">   <!-- mifreste be Actione ShowNewsList -->
+                        @item.NewsGroupTitle
+                    </a>
+                </div>
+                <img src="~/Images/News-Groups/@item.ImageName" />
+            </div>
+        }
+    </div>
+}
+
+@if (ViewBag.LocId == 2)
+{
+    <div>
+        <h2 style="color:green;">ShowNewsGroup Partial view LocId = 2</h2>
+    </div>
+
+    <div>
+        @foreach (var item in Model)
+        {
+            <div>
+                <a href="/Admin/NewsGroups/Details/@item.NewsGroupId" class="btn btn-info">@item.NewsGroupTitle</a>     <!---->
+            </div>
+            <a href="/News/ShowNewsList/@item.NewsGroupId">     <!-- mifreste be Actione ShowNewsList -->
+                @item.NewsGroupTitle
+            </a>
+            <div>
+                @item.News.Count()      <!-- FK, tedade Fk haro miyare -->
+            </div>
+        }
+    </div>
+}
+
+

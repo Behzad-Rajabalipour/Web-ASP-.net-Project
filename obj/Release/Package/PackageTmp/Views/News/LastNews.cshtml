@@ -1,0 +1,27 @@
+﻿@model dynamic
+
+@if (Model is IEnumerable<WebApplication12.Models.ViewModels.NewsViewModel> newsCollection)
+{
+    <p>---------------------------------------------------------</p>
+    <h2>Last News multi</h2>
+    foreach (var item in newsCollection)
+    {
+        @Html.Partial("_NewsBox", item, new ViewDataDictionary { { "code", 1 } })   <!-- Partial View(Razor), mitune item va input ham bebare -->
+    }
+}
+else if (Model is WebApplication12.Models.ViewModels.NewsViewModel singleNews)
+{
+    <p>---------------------------------------------------------</p>
+    <h2>Last News Single</h2>
+    <img src="~/Images/News/@singleNews.ImageName" alt="@singleNews.NewsTitle" />
+    <h2>
+        @singleNews.NewsTitle
+    </h2>
+    <p>
+        @Html.Raw(singleNews.Description)    <!-- chon az ckeditor migirm bayad az .Raw estefade konim -->
+    </p>
+    <a href="/News/NewsDetail/@singleNews.NewsId">News Number @singleNews.NewsId</a> <!-- vasl mishe be NewsDetail page -->
+
+}
+
+

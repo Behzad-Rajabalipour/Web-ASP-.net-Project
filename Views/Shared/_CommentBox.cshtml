@@ -1,0 +1,37 @@
+﻿@model WebApplication12.Models.ViewModels.CommentViewModel
+<tr>
+    <td>
+        @Model.commentId
+    </td>
+    <td>
+        @Model.Description
+    </td>
+    <td>
+        @Model.commentText
+    </td>
+    <td>
+        @Model.Name
+    </td>
+    <td>
+        @Model.Email
+    </td>
+    <td>
+        <small>
+            <i>
+                <!-- Model.RegisterDate.ToString("MM/dd/yyyy") -->          <!-- injuri ham mishe -->
+                @Html.DisplayFor(model => Model.RegisterDate)
+            </i>
+        </small>
+    </td>
+    <td>
+        @Model.IsActive
+    </td>
+    <td>
+        @Model.NewsId
+    </td>
+    <td>
+        @Html.ActionLink("behzad Edit", "Edit", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("behzad Details", "Details", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-info" }) |
+        @Html.ActionLink("behzad Delete", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
