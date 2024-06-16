@@ -60,31 +60,7 @@ To run this project locally, you need to have the following installed:
 4. Press `F5` to run the application.
 
 ## Project Structure
-
-\`\`\`
-Web-Authentication-Asp.net/
-├── Controllers/
-│   ├── AccountController.cs
-│   ├── HomeController.cs
-│   └── ManageController.cs
-├── Data/
-│   ├── ApplicationDbContext.cs
-│   └── Migrations/
-├── Models/
-│   ├── ApplicationUser.cs
-│   └── AccountViewModels.cs
-├── Views/
-│   ├── Account/
-│   ├── Home/
-│   └── Shared/
-├── wwwroot/
-│   ├── css/
-│   ├── js/
-│   └── lib/
-├── appsettings.json
-├── Startup.cs
-└── Program.cs
-\`\`\`
+![image](https://github.com/Behzad-Rajabalipour/Web-Authentication-Asp.net/assets/115672803/aafb5fcb-e687-4a7e-8b8c-a52b7b3ec0f2)
 
 ## Contributing
 
@@ -97,14 +73,4 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (\`git push origin feature/your-feature-name\`)
 6. Open a pull request
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Special thanks to all the contributors who have helped in developing this project.
-
----
-
-Feel free to reach out if you have any questions or need further assistance!
